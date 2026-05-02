@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "icon": "flame",
+    "text": "Selecciona un juego para comenzar"
+  },
+  {
+    "id": "2",
+    "icon": "people",
+    "text": "Agrega participantes a la partida"
+  },
+  {
+    "id": "3",
+    "icon": "settings",
+    "text": "Configura castigos y dificultad"
+  },
+  {
+    "id": "4",
+    "icon": "play",
+    "text": "Disfruta la dinámica del juego"
+  }
+]

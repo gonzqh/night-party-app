@@ -1,0 +1,14 @@
+[
+  {
+    "id": "shot_1",
+    "title": "Toma 1 shot",
+    "description": "Un shot rápido",
+    "type": "penalty",
+    "direction": "self",
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "difficulties": ["medium", "hard"],
+    "isSelectable": true,
+    "category": "drinks"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "truth_or_dare",
+    "title": "Verdad o Reto",
+    "subtitle": "Clásico de fiestas",
+    "icon": "help-circle",
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "difficulties": ["easy", "medium", "hard"]
+  }
+]

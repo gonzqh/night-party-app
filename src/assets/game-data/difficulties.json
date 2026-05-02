@@ -1,0 +1,11 @@
+[
+  {
+    "id": "easy",
+    "title": "Rompe hielo",
+    "subtitle": "Tranquilo",
+    "description": "Para empezar",
+    "icon": "leaf",
+    "weight": 1,
+    "rol" : "pasivo"
+  }
+]
