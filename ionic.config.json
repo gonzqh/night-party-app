@@ -1,0 +1,7 @@
+{
+  "name": "night-party-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
