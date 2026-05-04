@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-gameplay',
-  templateUrl: './gameplay.page.html',
-  styleUrls: ['./gameplay.page.scss'],
+  selector: 'app-shotoreto',
+  templateUrl: './shotoreto.page.html',
+  styleUrls: ['./shotoreto.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
-export class GameplayPage implements OnInit {
+export class ShotoretoPage implements OnInit {
 
   constructor() { }
 

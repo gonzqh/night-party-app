@@ -1,0 +1,61 @@
+<ion-content class="app-background">
+
+  <div class="container">
+
+    <!-- TURNO -->
+    <h1 class="turn-title">
+      Turno de <span>{{ state?.currentPlayer?.name }}</span>
+    </h1>
+
+    <!-- DADO -->
+    <div
+      class="dice"
+      [class.rolling]="isRolling"
+      (click)="rollDice()"
+    >
+      {{ isRolling ? '🎲' : state?.dice || '🎲' }}
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="result-card" *ngIf="showResult">
+
+      <p class="action">
+        {{ state?.action }}
+      </p>
+
+      <div class="punishment">
+        <h3>{{ state?.punishment?.title }}</h3>
+        <p>{{ state?.punishment?.description }}</p>
+      </div>
+
+    </div>
+
+    <!-- DECISIONES -->
+    <div class="decision-buttons" *ngIf="showDecision">
+
+      <ion-button class="success" (click)="resolveDecision('success')">
+        Cumplió 😎
+      </ion-button>
+
+      <ion-button (click)="resolveDecision('SHOT')">
+        Shot 🍻
+      </ion-button>
+
+      <ion-button (click)="resolveDecision('WEAR')">
+        Prenda 👕
+      </ion-button>
+
+      <ion-button (click)="resolveDecision('MONEY')">
+        Dinero 💸
+      </ion-button>
+
+    </div>
+
+  </div>
+
+  <!-- BANNER -->
+  <div class="result-banner" *ngIf="showBanner">
+    {{ bannerMessage }}
+  </div>
+
+</ion-content>

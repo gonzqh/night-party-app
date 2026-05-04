@@ -1,13 +1,57 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>punishments</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="app-background">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">punishments</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+
+    <h1 class="title">Tipos de castigo</h1>
+
+    <p class="subtitle">
+      Elige cómo se reemplazarán los castigos
+    </p>
+
+    <!-- OPTIONS -->
+    <div class="options">
+
+      <div
+        class="option-card"
+        *ngFor="let opt of alternativePunishmentOption"
+        [class.selected]="isSelected(opt)"
+        (click)="toggleOption(opt)"
+      >
+
+        <ion-icon [name]="opt.icon" class="option-icon"></ion-icon>
+
+        <div class="option-content">
+          <h2>{{ opt.label }}</h2>
+          <p>{{ opt.description }}</p>
+        </div>
+
+        <div class="check-indicator">
+          <ion-icon
+            *ngIf="isSelected(opt)"
+            name="checkmark-circle"
+          ></ion-icon>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+<!-- INFO BANNER -->
+<div class="info-banner-fixed">
+  <ion-icon name="information-circle-outline"></ion-icon>
+  <p>Puedes cambiar estas opciones en cualquier momento durante la partida.</p>
+</div>
+
+<!-- BOTÓN -->
+<div class="fixed-button">
+  <ion-button
+    expand="block"
+    class="start-button"
+    (click)="continue()"
+    [disabled]="selectedTypes.length === 0"
+  >
+    Continuar
+  </ion-button>
+</div>
 </ion-content>

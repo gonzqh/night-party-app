@@ -30,8 +30,20 @@ export const routes: Routes = [
     path: 'in-game-settings',
     loadComponent: () => import('./pages/in-game-settings/in-game-settings.page').then( m => m.InGameSettingsPage)
   },
+  /* {
+    path: 'todito',
+    loadComponent: () => import('./pages/games/todito/todito.page').then( m => m.ToditoPage)
+  }, */
   {
-    path: 'gameplay',
-    loadComponent: () => import('./pages/gameplay/gameplay.page').then( m => m.GameplayPage)
+    path: 'caminitos',
+    loadComponent: () => import('./pages/games/caminitos/caminitos.page').then( m => m.CaminitosPage)
+  },
+  {
+    path: 'ludo',
+    loadComponent: () => import('./pages/games/ludo/ludo.page').then( m => m.LudoPage)
+  },
+  {
+    path: 'shotoreto',
+    loadComponent: () => import('./pages/games/shotoreto/shotoreto.page').then( m => m.ShotoretoPage)
   },
 ];

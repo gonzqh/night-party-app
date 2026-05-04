@@ -1,23 +1,37 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="app-background">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
 
-  <ion-button id="present-alert">Click Me</ion-button>
-<ion-alert
-  trigger="present-alert"
-  header="A Short Title Is Best"
-  subHeader="A Sub Header Is Optional"
-  message="A message should be a short, complete sentence."
-  [buttons]="alertButtons"
-></ion-alert>
+    <h1 class="title">¿Cómo jugar?</h1>
+
+    <ion-list lines="none" class="transparent-list">
+
+      <ion-card *ngFor="let item of instructions" class="instruction-card">
+
+        <div class="card-row">
+
+          <ion-icon 
+            [name]="item.icon" 
+            class="instruction-icon">
+          </ion-icon>
+
+          <div class="text-content">
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.text }}</p>
+          </div>
+
+        </div>
+
+      </ion-card>
+
+    </ion-list>
+
+  </div>
+
+   <div class="fixed-button">
+    <ion-button expand="block" class="start-button" (click)="startGame()">
+      Crear partida
+    </ion-button>
+  </div>
 
 </ion-content>

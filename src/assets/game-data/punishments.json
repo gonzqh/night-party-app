@@ -1,14 +1,170 @@
 [
   {
-    "id": "shot_1",
-    "title": "Toma 1 shot",
-    "description": "Un shot rápido",
-    "type": "penalty",
-    "direction": "self",
+    "id": "p1",
+    "title": "Shot inmediato",
+    "description": "Debes tomar un shot sin pensarlo.",
     "minPlayers": 2,
     "maxPlayers": 10,
-    "difficulties": ["medium", "hard"],
-    "isSelectable": true,
-    "category": "drinks"
+    "difficultiesIds": ["1"],
+    "target": "SELF",
+    "alternativePunishment": {
+      "SHOT": "Toma un shot doble",
+      "WEAR": "Usa un accesorio por 2 rondas",
+      "MONEY": "Aporta al pozo"
+    }
+  },
+  {
+    "id": "p2",
+    "title": "Izquierda manda",
+    "description": "El jugador de tu izquierda decide tu castigo.",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "difficultiesIds": ["1", "2"],
+    "target": "LEFT",
+    "alternativePunishment": {
+      "SHOT": "Toma 1 shot",
+      "WEAR": "Usa una prenda incómoda",
+      "MONEY": "Paga una penalidad"
+    }
+  },
+  {
+    "id": "p3",
+    "title": "Derecha elige",
+    "description": "El jugador de tu derecha decide qué haces.",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "difficultiesIds": ["2"],
+    "target": "RIGHT",
+    "alternativePunishment": {
+      "SHOT": "Toma 2 shots",
+      "WEAR": "Usa una prenda por 3 rondas",
+      "MONEY": "Duplica tu aporte"
+    }
+  },
+  {
+    "id": "p4",
+    "title": "Todos participan",
+    "description": "Todos los jugadores deben cumplir.",
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "difficultiesIds": ["1"],
+    "target": "ALL",
+    "alternativePunishment": {
+      "SHOT": "Todos toman medio shot",
+      "WEAR": "Todos usan un accesorio",
+      "MONEY": "Todos aportan"
+    }
+  },
+  {
+    "id": "p5",
+    "title": "Jugador al azar",
+    "description": "Un jugador aleatorio es elegido.",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "difficultiesIds": ["2"],
+    "target": "RANDOM",
+    "alternativePunishment": {
+      "SHOT": "Toma 2 shots",
+      "WEAR": "Usa una prenda incómoda",
+      "MONEY": "Paga penalidad"
+    }
+  },
+  {
+    "id": "p6",
+    "title": "Votación grupal",
+    "description": "El grupo decide quién pierde.",
+    "minPlayers": 4,
+    "maxPlayers": 10,
+    "difficultiesIds": ["2"],
+    "target": "VOTE",
+    "alternativePunishment": {
+      "SHOT": "El elegido toma 2 shots",
+      "WEAR": "Usa un outfit ridículo",
+      "MONEY": "Aporta al pozo"
+    }
+  },
+  {
+    "id": "p7",
+    "title": "Reacción lenta",
+    "description": "El último en reaccionar pierde.",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "difficultiesIds": ["2"],
+    "target": "ALL",
+    "alternativePunishment": {
+      "SHOT": "Shot para el perdedor",
+      "WEAR": "Accesorio obligatorio",
+      "MONEY": "Paga penalidad"
+    }
+  },
+  {
+    "id": "p8",
+    "title": "Confesión rápida",
+    "description": "Responde honestamente o cumple castigo.",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "difficultiesIds": ["1", "2"],
+    "target": "SELF",
+    "alternativePunishment": {
+      "SHOT": "Toma un shot",
+      "WEAR": "Usa prenda por 2 rondas",
+      "MONEY": "Aporta pequeño monto"
+    }
+  },
+  {
+    "id": "p9",
+    "title": "Modo intenso",
+    "description": "Acepta un reto más fuerte elegido por el grupo.",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "difficultiesIds": ["3"],
+    "target": "VOTE",
+    "alternativePunishment": {
+      "SHOT": "Toma 3 shots",
+      "WEAR": "Usa prenda toda la ronda",
+      "MONEY": "Aporte alto"
+    }
+  },
+  {
+    "id": "p10",
+    "title": "Todos contra uno",
+    "description": "El grupo elige quién será castigado.",
+    "minPlayers": 4,
+    "maxPlayers": 10,
+    "difficultiesIds": ["3"],
+    "target": "VOTE",
+    "alternativePunishment": {
+      "SHOT": "Toma 3 shots",
+      "WEAR": "Usa una prenda ridícula por 3 rondas",
+      "MONEY": "Aporta una cantidad significativa"
+    }
+  },
+  {
+    "id": "p11",
+    "title": "Auto castigo",
+    "description": "Debes cumplir sin ayuda.",
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "difficultiesIds": ["1"],
+    "target": "SELF",
+    "alternativePunishment": {
+      "SHOT": "Shot inmediato",
+      "WEAR": "Accesorio obligatorio",
+      "MONEY": "Pago leve"
+    }
+  },
+  {
+    "id": "p12",
+    "title": "Presión grupal",
+    "description": "Todos te observan mientras cumples.",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "difficultiesIds": ["3"],
+    "target": "SELF",
+    "alternativePunishment": {
+      "SHOT": "Toma 2 shots seguidos",
+      "WEAR": "Prenda incómoda toda la ronda",
+      "MONEY": "Aporte elevado"
+    }
   }
 ]

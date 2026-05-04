@@ -1,13 +1,122 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>players</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="app-background">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">players</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+
+    <h1 class="title">Jugadores</h1>
+
+    <!-- INPUT -->
+    <div class="input-card">
+
+      <ion-input
+        [(ngModel)]="name"
+        placeholder="Agregar jugador"
+        class="player-input"
+      ></ion-input>
+
+      <ion-button class="add-btn" (click)="openModal()">
+        <ion-icon name="add-outline"></ion-icon>
+      </ion-button>
+
+    </div>
+
+    <!-- LISTA -->
+    <div class="players-list">
+
+      <div class="player-card" *ngFor="let p of players">
+
+        <ion-avatar class="avatar" *ngIf="p.photo; else defaultAvatar">
+          <img [src]="p.photo" />
+        </ion-avatar>
+
+        <ng-template #defaultAvatar>
+          <div class="default-avatar">
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+        </ng-template>
+
+        <div class="player-info">
+          <h2>{{ p.name }}</h2>
+          <small class="role">{{ p.role }}</small>
+        </div>
+
+        <div class="actions">
+          <ion-button fill="clear" (click)="editPlayer(p)">
+            <ion-icon name="create-outline"></ion-icon>
+          </ion-button>
+
+          <ion-button fill="clear" color="danger" (click)="deletePlayer(p.id)">
+            <ion-icon name="trash-outline"></ion-icon>
+          </ion-button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CONTINUAR -->
+  <div class="fixed-button">
+    <ion-button expand="block" class="start-button" (click)="continue()">
+      Continuar
+    </ion-button>
+  </div>
+
+  <!-- MODAL CONSISTENTE (NO NEGRO ROTO) -->
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-content class="modal-content">
+
+        <div class="modal-container">
+
+          <!-- FOTO -->
+          <div class="photo-box">
+
+            <img *ngIf="tempPhoto; else placeholder" [src]="tempPhoto" />
+
+            <ng-template #placeholder>
+              <div class="placeholder">
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </div>
+            </ng-template>
+
+          </div>
+
+          <!-- NOMBRE -->
+          <ion-input
+            [(ngModel)]="modalName"
+            placeholder="Nombre del jugador"
+            class="modal-input"
+          ></ion-input>
+
+          <!-- ROL SELECT -->
+          <div class="select-box">
+
+            <ion-select [(ngModel)]="modalRole" placeholder="Selecciona rol">
+              <ion-select-option *ngFor="let r of roles" [value]="r.label">
+                {{ r.label }}
+              </ion-select-option>
+            </ion-select>
+
+          </div>
+
+          <!-- BOTONES -->
+          <ion-button expand="block" class="modal-btn" (click)="takePhoto()">
+            Tomar foto (Opcional)
+          </ion-button>
+
+          <ion-button expand="block" class="modal-btn success" (click)="savePlayer()">
+            Guardar
+          </ion-button>
+
+          <ion-button expand="block" class="modal-btn cancel" (click)="closeModal()">
+            Cancelar
+          </ion-button>
+
+        </div>
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
 </ion-content>

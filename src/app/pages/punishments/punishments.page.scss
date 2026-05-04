@@ -1,0 +1,225 @@
+
+/* 🔥 CONTENEDOR */
+.container {
+  padding: 20px;
+  padding-bottom: 120px;
+}
+
+/* 🧠 TITULO */
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 6px;
+}
+
+/* 📄 SUBTITULO */
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+}
+
+/* 📦 LISTA */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* 🧊 CARD BASE */
+.option-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 16px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.05)
+  );
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.25s ease;
+  cursor: pointer;
+
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* 🎯 ICONO */
+.option-icon {
+  font-size: 26px;
+  color: #ffd700;
+  flex-shrink: 0;
+}
+
+/* 📝 TEXTO */
+.option-content {
+  flex: 1;
+}
+
+.option-content h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.option-content p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ✅ CHECK */
+.check-indicator {
+  margin-left: auto;
+  font-size: 22px;
+  color: #ff4d6d;
+  display: flex;
+  align-items: center;
+}
+
+/* 🌈 ESTADO SELECCIONADO */
+.option-card.selected {
+  border: 1px solid rgba(255, 77, 109, 0.9);
+
+  box-shadow:
+    0 0 10px rgba(255, 77, 109, 0.4),
+    0 0 25px rgba(123, 47, 247, 0.25);
+
+  transform: scale(1.02);
+}
+
+/* 🖱️ INTERACCIÓN */
+.option-card:hover {
+  transform: scale(1.015);
+}
+
+.option-card:active {
+  transform: scale(0.98);
+}
+
+/* 🎬 ANIMACIÓN */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📍 BOTÓN FIJO */
+.fixed-button {
+  position: fixed;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  left: 20px;
+  right: 20px;
+}
+
+/* 🔥 BOTÓN PRINCIPAL */
+.start-button {
+  --background: linear-gradient(135deg, #ff4d6d, #7b2ff7);
+  --background-hover: linear-gradient(135deg, #ff4d6d, #7b2ff7);
+  --background-activated: linear-gradient(135deg, #ff4d6d, #7b2ff7);
+
+  --border-radius: 16px;
+
+  height: 52px;
+  font-size: 16px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+}
+
+/* ⛔ BOTÓN DISABLED */
+.start-button[disabled] {
+  opacity: 0.5;
+}
+
+/* 🧠 INFO BANNER */
+.info-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 20px;
+  padding: 14px 16px;
+
+  border-radius: 16px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.03)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* ICONO */
+.info-banner ion-icon {
+  font-size: 20px;
+  color: #7b2ff7; /* morado suave */
+  flex-shrink: 0;
+}
+
+/* 🧠 BANNER FIJO SOBRE EL BOTÓN */
+.info-banner-fixed {
+  position: fixed;
+
+  bottom: calc(90px + env(safe-area-inset-bottom)); /* 👈 encima del botón */
+  left: 20px;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 14px;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.03)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  z-index: 10;
+}
+
+/* ICONO */
+.info-banner-fixed ion-icon {
+  font-size: 18px;
+  color: #7b2ff7;
+}
+
+/* TEXTO */
+.info-banner-fixed p {
+  margin: 0;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.3;
+}

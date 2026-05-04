@@ -1,11 +1,23 @@
 [
   {
-    "id": "easy",
-    "title": "Rompe hielo",
-    "subtitle": "Tranquilo",
-    "description": "Para empezar",
-    "icon": "leaf",
-    "weight": 1,
-    "rol" : "pasivo"
+    "id": "LOW",
+    "title": "Rompehielos",
+    "description": "Ideal para iniciar la partida sin incomodidad. Dinámicas ligeras para generar confianza y romper el hielo desde el inicio.",
+    "icon": "beer-outline",
+    "level": 1
+  },
+  {
+    "id": "MEDIUM",
+    "title": "Subiendo la temperatura",
+    "description": "Retos más atrevidos y dinámicos. Perfecto para perder la vergüenza y aumentar la intensidad del juego.",
+    "icon": "flame-outline",
+    "level": 2
+  },
+  {
+    "id": "HIGH",
+    "title": "Modo extremo",
+    "description": "Sin filtros, sin vergüenza y sin límites. Retos intensos para grupos que buscan una experiencia completamente salvaje.",
+    "icon": "male-female-outline",
+    "level": 3
   }
 ]

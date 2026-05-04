@@ -1,22 +1,38 @@
 [
   {
     "id": "1",
-    "icon": "flame",
-    "text": "Selecciona un juego para comenzar"
+    "icon": "beer-outline",
+    "title": "Bienvenido a Night Party",
+    "text": "Aquí es donde las cosas se ponen interesantes. Risas, retos y decisiones que podrían sacarte de tu zona de confort."
   },
   {
     "id": "2",
-    "icon": "people",
-    "text": "Agrega participantes a la partida"
+    "icon": "game-controller-outline",
+    "title": "Elige cómo quieres jugar",
+    "text": "Cada juego tiene su propio nivel de intensidad. Elige bien… o déjate llevar."
   },
   {
     "id": "3",
-    "icon": "settings",
-    "text": "Configura castigos y dificultad"
+    "icon": "people-outline",
+    "title": "Elige a tus cómplices",
+    "text": "Invita a quienes estén listos para jugar sin filtros. Aquí nadie se salva."
   },
   {
     "id": "4",
-    "icon": "play",
-    "text": "Disfruta la dinámica del juego"
+    "icon": "speedometer-outline",
+    "title": "Sube la intensidad",
+    "text": "Desde tranquilo… hasta sin límites. Tú decides qué tan lejos llegar esta noche."
+  },
+  {
+    "id": "5",
+    "icon": "gift-outline",
+    "title": "Configura los castigos",
+    "text": "Hazlos divertidos… o peligrosamente interesantes. Todo depende del ambiente."
+  },
+  {
+    "id": "6",
+    "icon": "settings-outline",
+    "title": "Nada está escrito",
+    "text": "Nada es fijo. Puedes cambiar las reglas en cualquier momento. Si tienes ideas, usa el botón de sugerencias durante la partida y mejora el juego para todos."
   }
 ]

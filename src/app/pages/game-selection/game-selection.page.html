@@ -1,13 +1,46 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>game-selection</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="app-background">
+  <div class="container">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">game-selection</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <h1 class="title">Selecciona un juego</h1>
+
+    <ion-radio-group [(ngModel)]="selectedGameId">
+
+      <div class="game-card" *ngFor="let game of games" [class.disabled]="!game.enabled"
+        [class.selected]="selectedGameId === game.id" (click)="game.enabled && (selectedGameId = game.id)">
+
+
+        <!-- CINTA EN CONSTRUCCIÓN -->
+        <div *ngIf="!game.enabled" class="ribbon">
+          EN CONSTRUCCIÓN
+        </div>
+
+        <!-- RADIO TOP RIGHT -->
+        <ion-radio class="radio-top" [value]="game.id" [disabled]="!game.enabled"></ion-radio>
+
+        <!-- ICONO -->
+        <ion-icon [name]="game.icon" class="game-icon"></ion-icon>
+
+        <!-- CONTENIDO -->
+        <div class="game-content">
+          <h2>{{ game.title }}</h2>
+          <p>{{ game.subtitle }}</p>
+
+          <div class="players">
+            <ion-icon name="people-outline"></ion-icon>
+            <span>{{ game.minPlayers }} - {{ game.maxPlayers }} jugadores</span>
+          </div>
+        </div>
+
+      </div>
+
+    </ion-radio-group>
+
+  </div>
+
+  <!-- BOTÓN FIJO -->
+  <div class="fixed-button">
+    <ion-button expand="block" class="start-button" (click)="continue()" [disabled]="!selectedGameId">
+      Continuar
+    </ion-button>
+  </div>
 </ion-content>

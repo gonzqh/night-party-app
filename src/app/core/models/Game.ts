@@ -5,5 +5,6 @@ export interface Game {
   icon: string;
   minPlayers: number;
   maxPlayers: number;
-  difficulties: string[]; // ids
+  enabled: boolean;
+  route: string;
 }

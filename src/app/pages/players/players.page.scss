@@ -1,0 +1,242 @@
+/* CONTENEDOR */
+.container {
+  padding: 20px;
+  padding-bottom: 120px;
+}
+
+/* TITULO */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+/* INPUT CARD */
+.input-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 14px;
+  margin-bottom: 20px;
+
+  border-radius: 16px;
+
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.05));
+
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* INPUT */
+.player-input {
+  --color: white;
+  --placeholder-color: rgba(255, 255, 255, 0.5);
+}
+
+/* BOTÓN ADD */
+.add-btn {
+  --background: linear-gradient(135deg, #ff4d6d, #7b2ff7);
+  --border-radius: 12px;
+  width: 44px;
+  height: 44px;
+}
+
+/* LISTA */
+.players-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* PLAYER CARD */
+.player-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 16px;
+
+  border-radius: 16px;
+
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.05));
+
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: transform 0.2s ease;
+}
+
+.player-card:active {
+  transform: scale(0.98);
+}
+
+/* AVATAR */
+.avatar {
+  width: 42px;
+  height: 42px;
+}
+
+/* INFO */
+.player-info h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+/* BOTÓN FIJO */
+.fixed-button {
+  position: fixed;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  left: 20px;
+  right: 20px;
+}
+
+/* BOTÓN PRINCIPAL */
+.start-button {
+  --background: linear-gradient(135deg, #ff4d6d, #7b2ff7);
+  --border-radius: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  height: 50px;
+}
+
+/* MODAL */
+.modal-content {
+  --background: rgba(10, 10, 20, 0.95);
+}
+
+.modal-container {
+  padding: 20px;
+}
+
+.modal-title {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* FOTO */
+.photo-preview img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+/* BOTONES MODAL */
+.modal-btn {
+  margin-bottom: 10px;
+  --border-radius: 14px;
+}
+
+.modal-btn.success {
+  --background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.modal-btn.cancel {
+  --background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+
+/* AVATAR DEFAULT */
+.default-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ACTION BUTTONS */
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 6px;
+}
+
+
+/* MODAL ARREGLADO (NO NEGRO PURO) */
+.modal-content {
+  --background: linear-gradient(135deg,
+      rgba(10, 10, 20, 0.95),
+      rgba(20, 10, 30, 0.95));
+}
+
+/* BOX FOTO */
+.photo-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.photo-box img,
+.placeholder {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 40px;
+}
+
+.modal-input {
+  padding: 10px !important;
+  text-align-last: center;
+}
+
+/* INPUTS */
+.modal-input,
+.select-box ion-select {
+  margin-bottom: 12px;
+
+  --color: white;
+  --placeholder-color: rgba(255, 255, 255, 0.5);
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 10px;
+
+  justify-items: anchor-center;
+
+}
+
+/* ROLE LABEL */
+.role {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* BOTONES MODAL CONSISTENTES */
+.modal-btn {
+  margin-bottom: 10px;
+  --border-radius: 14px;
+  --background: linear-gradient(135deg, #ff4d6d, #7b2ff7);
+}
+
+.modal-btn.success {
+  --background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.modal-btn.cancel {
+  --background: rgba(255, 255, 255, 0.1);
+  color: white;
+}

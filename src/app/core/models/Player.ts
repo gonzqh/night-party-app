@@ -1,5 +1,8 @@
 export interface Player {
   id: string;
   name: string;
-  photo?: string; // base64 o path
+  photo?: string;
+  role?: Role;
 }
+
+export type Role = 'ACTIVO' | 'PASIVO' | 'VERSATIL';
