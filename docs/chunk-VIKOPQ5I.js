@@ -1,0 +1,32 @@
+// src/app/core/models/Punishments.ts
+var ALTERNATIVE_PUNISHMENTS = [
+  {
+    type: "SHOT",
+    label: "Shots",
+    description: "No lo haces, lo bebes. Cada error suma, cada ronda pesa m\xE1s\u2026 y el control empieza a desaparecer.",
+    icon: "wine-outline"
+  },
+  {
+    type: "WEAR",
+    label: "Quita prendas",
+    description: "Te equivocas, te quitas una prenda. F\xE1cil. El problema es cuando ya no queda mucho que quitar\u2026",
+    icon: "shirt-outline"
+  },
+  {
+    type: "MONEY",
+    label: "Fondo com\xFAn",
+    description: "Pagas para evitarlo\u2026 pero ese dinero vuelve en m\xE1s alcohol. Nadie se salva, solo se retrasa.",
+    icon: "cash-outline"
+  },
+  {
+    type: "ACTION",
+    label: "Reto",
+    description: "Si no quieres beber, ni quitarte ropa, ni pagar, tendr\xE1s que cumplir un reto. \xBFTe animas a descubrirlo?",
+    icon: "body-outline"
+  }
+];
+
+export {
+  ALTERNATIVE_PUNISHMENTS
+};
+//# sourceMappingURL=chunk-VIKOPQ5I.js.map
