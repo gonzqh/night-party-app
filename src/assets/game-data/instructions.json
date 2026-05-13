@@ -3,36 +3,36 @@
     "id": "1",
     "icon": "beer-outline",
     "title": "Bienvenido a Night Party",
-    "text": "Aquí es donde las cosas se ponen interesantes. Risas, retos y decisiones que podrían sacarte de tu zona de confort."
+    "text": "Disfruta juegos, retos y momentos divertidos con tus amigos. Todo listo para hacer tus reuniones mucho más entretenidas."
   },
   {
     "id": "2",
     "icon": "game-controller-outline",
-    "title": "Elige cómo quieres jugar",
-    "text": "Cada juego tiene su propio nivel de intensidad. Elige bien… o déjate llevar."
+    "title": "Elige un juego",
+    "text": "Cada modo tiene reglas y dinámicas diferentes. Explora los distintos juegos y juega como más te guste."
   },
   {
     "id": "3",
     "icon": "people-outline",
-    "title": "Elige a tus cómplices",
-    "text": "Invita a quienes estén listos para jugar sin filtros. Aquí nadie se salva."
+    "title": "Agrega a los jugadores",
+    "text": "Invita a tus amigos y arma el grupo para la partida. Mientras más jugadores, más divertida será la experiencia."
   },
   {
     "id": "4",
     "icon": "speedometer-outline",
-    "title": "Sube la intensidad",
-    "text": "Desde tranquilo… hasta sin límites. Tú decides qué tan lejos llegar esta noche."
+    "title": "Selecciona la dificultad",
+    "text": "Puedes elegir entre niveles casual, atrevido o extremo según el tipo de ambiente que quieran tener."
   },
   {
     "id": "5",
     "icon": "gift-outline",
     "title": "Configura los castigos",
-    "text": "Hazlos divertidos… o peligrosamente interesantes. Todo depende del ambiente."
+    "text": "Personaliza las reglas de la partida con castigos como bebidas, retos, prendas o cualquier idea que prefieran."
   },
   {
     "id": "6",
     "icon": "settings-outline",
-    "title": "Nada está escrito",
-    "text": "Nada es fijo. Puedes cambiar las reglas en cualquier momento. Si tienes ideas, usa el botón de sugerencias durante la partida y mejora el juego para todos."
+    "title": "Personaliza la experiencia",
+    "text": "Cambia opciones y ajusta las reglas cuando quieras para que cada partida se adapte a tu grupo."
   }
 ]

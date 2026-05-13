@@ -8,6 +8,9 @@ import { Punishment } from '../models/Punishments';
   providedIn: 'root',
 })
 export class SessionService {
+  endSession() {
+    this.clear();
+  }
   private difficulty: Difficulty | undefined;
   private game: Game | undefined;
   private players: Player[] = [];

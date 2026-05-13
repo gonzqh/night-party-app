@@ -66,13 +66,19 @@ export class PunishmentsPage implements OnInit {
   }
 
   continue() {
-    const difficultyMatch = this.session.getSessionData().difficulty;
+    const difficultyMatch = this.session.getSessionData().difficulty?.level;
     const gameMatch = this.session.getSessionData().game?.route;
-    const punishments: Punishment[] = this.punishments.filter(p => difficultyMatch && p.difficultiesIds.includes(difficultyMatch.id) &&
-      this.selectedTypes.some(type => Object.keys(p.alternativePunishment).includes(type))
-    );
+    const punishmentsDifficulty: Punishment[] = this.punishments.filter(p => difficultyMatch && p.difficultiesIds.includes(difficultyMatch.toString()));
+
+    let punishments: Punishment[];
+    if (this.selectedTypes.length === 0) {
+      punishments = punishmentsDifficulty;
+    } else {
+      punishments = punishmentsDifficulty.filter(p => this.selectedTypes.some(type => type in p.alternativePunishment));
+    }
+  
     this.session.setPunishments(punishments);
     console.log(this.session.getSessionData());
-    this.router.navigate(gameMatch ? ['/game/' + gameMatch] : ['/']);
+    this.router.navigate(gameMatch ? ['/gameplay/' + gameMatch] : ['/']);
   }
 }

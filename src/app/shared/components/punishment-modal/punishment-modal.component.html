@@ -1,0 +1,78 @@
+<ion-modal [isOpen]="isOpen" class="punishment-modal">
+  <ng-template>
+
+    <div class="modal-wrapper">
+
+      <div class="punishment-card">
+
+        <!-- HEADER -->
+        <div class="card-header">
+
+          <h1 class="title">
+            {{ punishment?.title }}
+          </h1>
+
+          <div class="target-badge">
+            {{ resolveTarget }}
+          </div>
+
+        </div>
+
+        <!-- BODY -->
+        <div class="card-body">
+
+          <p class="description">
+            {{ punishment?.description }}
+          </p>
+
+          <div class="main-icon">
+
+            <ion-icon [name]="punishment?.icon || 'flame-outline'">
+            </ion-icon>
+
+          </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="alternatives" [class.one]="alternativePunishments.length === 1"
+          [class.two]="alternativePunishments.length === 2" [class.three]="alternativePunishments.length === 3">
+
+          <div *ngFor="let item of alternativePunishments" class="alternative-item">
+
+            <ion-icon [name]="getAlternativeIcon(item[0])">
+            </ion-icon>
+
+            <span>
+
+              <ng-container [ngSwitch]="item[0]">
+                <span *ngSwitchCase="'SHOT'">
+                  ({{ item[1] }})
+                </span>
+
+                <span *ngSwitchCase="'MONEY'">
+                  S/. {{ item[1] }}
+                </span>
+
+                <span *ngSwitchDefault>
+                  {{ item[1] }}
+                </span>
+
+              </ng-container>
+
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <ion-button expand="block" class="complete-btn" (click)="onCompleted()">
+        Desafío completado
+      </ion-button>
+
+    </div>
+
+  </ng-template>
+</ion-modal>

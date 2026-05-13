@@ -1,61 +1,156 @@
-<ion-content class="app-background">
 
-  <div class="container">
+<div class="app-background">
+
+  <div class="player-container">
+<!-- PLAYERS -->
+    <div class="players-row">
+
+      <div
+        #playerCard
+
+        class="player-card"
+        *ngFor="let player of game.players; let i = index"
+        [class.active]="i === currentIndex"
+      >
+
+        <div class="avatar">
+
+          <img
+            *ngIf="player.photo"
+            [src]="player.photo"
+          />
+
+          <ion-icon
+            *ngIf="!player.photo"
+            name="person-outline">
+          </ion-icon>
+
+        </div>
+
+        <span>
+          {{ player.name }}
+        </span>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="todito-container">
+
+    
 
     <!-- TURNO -->
-    <h1 class="turn-title">
-      Turno de <span>{{ state?.currentPlayer?.name }}</span>
-    </h1>
+    <div class="turn-container">
+
+      <h3>Turno de</h3>
+
+      <h1>
+        {{ currentPlayer.name }}
+      </h1>
+
+    </div>
 
     <!-- DADO -->
     <div
-      class="dice"
-      [class.rolling]="isRolling"
-      (click)="rollDice()"
-    >
-      {{ isRolling ? '🎲' : state?.dice || '🎲' }}
+  class="dice-container"
+  (click)="rollDice()"
+>
+
+  <div
+    class="dice"
+    [class.rolling]="isRolling"
+    [attr.data-face]="dice || 1"
+  >
+
+    <div class="face front">
+      <span class="dot center"></span>
     </div>
 
-    <!-- RESULTADO -->
-    <div class="result-card" *ngIf="showResult">
+    <div class="face back">
+      <span class="dot top-left"></span>
+      <span class="dot top-right"></span>
+      <span class="dot middle-left"></span>
+      <span class="dot middle-right"></span>
+      <span class="dot bottom-left"></span>
+      <span class="dot bottom-right"></span>
+    </div>
 
-      <p class="action">
-        {{ state?.action }}
-      </p>
+    <div class="face right">
+      <span class="dot top-left"></span>
+      <span class="dot center"></span>
+      <span class="dot bottom-right"></span>
+    </div>
 
-      <div class="punishment">
-        <h3>{{ state?.punishment?.title }}</h3>
-        <p>{{ state?.punishment?.description }}</p>
+    <div class="face left">
+      <span class="dot top-left"></span>
+      <span class="dot top-right"></span>
+      <span class="dot bottom-left"></span>
+      <span class="dot bottom-right"></span>
+    </div>
+
+    <div class="face top">
+      <span class="dot top-left"></span>
+      <span class="dot top-right"></span>
+      <span class="dot center"></span>
+      <span class="dot bottom-left"></span>
+      <span class="dot bottom-right"></span>
+    </div>
+
+    <div class="face bottom">
+      <span class="dot top-left"></span>
+      <span class="dot top-right"></span>
+      <span class="dot middle-left"></span>
+      <span class="dot middle-right"></span>
+      <span class="dot bottom-left"></span>
+      <span class="dot bottom-right"></span>
+    </div>
+
+  </div>
+
+</div>
+
+    <!-- RESULT -->
+    <div
+      class="result-card"
+      *ngIf="resultText"
+    >
+
+      <h2>
+        {{ resultText }}
+      </h2>
+
+      <!-- TYPES -->
+      <div class="punishment-types">
+
+        <button
+          *ngFor="let type of getPunishemntTypes"
+          class="type-btn"
+          (click)="selectPunishmentType(type.type)"
+        >
+
+          <ion-icon [name]="type.icon"></ion-icon>
+
+          <span>
+            {{ type.label }}
+          </span>
+
+        </button>
+
       </div>
 
     </div>
 
-    <!-- DECISIONES -->
-    <div class="decision-buttons" *ngIf="showDecision">
-
-      <ion-button class="success" (click)="resolveDecision('success')">
-        Cumplió 😎
-      </ion-button>
-
-      <ion-button (click)="resolveDecision('SHOT')">
-        Shot 🍻
-      </ion-button>
-
-      <ion-button (click)="resolveDecision('WEAR')">
-        Prenda 👕
-      </ion-button>
-
-      <ion-button (click)="resolveDecision('MONEY')">
-        Dinero 💸
-      </ion-button>
-
-    </div>
-
   </div>
 
-  <!-- BANNER -->
-  <div class="result-banner" *ngIf="showBanner">
-    {{ bannerMessage }}
-  </div>
+  <app-punishment-modal
+  [isOpen]="showPunishmentModal"
+  [punishment]="selectedPunishment"
+  [players]="game.players"
+  [currentPlayer]="currentPlayer"
+  (completed)="confirmarSalida()"
+  (closed)="showPunishmentModal = false"
+>
+</app-punishment-modal>
 
-</ion-content>
+</div>

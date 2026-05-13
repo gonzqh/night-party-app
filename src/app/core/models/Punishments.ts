@@ -3,6 +3,7 @@ export interface Punishment {
   title: string;
   description: string;
   minPlayers: number;
+  icon?: string;
   maxPlayers: number;
   difficultiesIds: string[];
   alternativePunishment: Record<AlternativePunishmentType, string>;
@@ -10,14 +11,16 @@ export interface Punishment {
 }
 
 export type PunishmentTarget =
+  | ''
   | 'LEFT'
   | 'RIGHT'
   | 'ALL'
   | 'RANDOM'
   | 'SELF'
-  | 'VOTE';
+  | 'VOTE'
+  | 'CHOICE';
 
-export type AlternativePunishmentType = 'SHOT' | 'WEAR' | 'MONEY';
+export type AlternativePunishmentType = 'SHOT' | 'WEAR' | 'MONEY' | 'ACTION';
 
 export interface AlternativePunishmentOption {
   type: AlternativePunishmentType;
@@ -44,5 +47,11 @@ export const ALTERNATIVE_PUNISHMENTS: AlternativePunishmentOption[] = [
     label: 'Fondo común',
     description: 'Pagas para evitarlo… pero ese dinero vuelve en más alcohol. Nadie se salva, solo se retrasa.',
     icon: 'cash-outline'
+  },
+  {
+    type: 'ACTION',
+    label: 'Reto',
+    description: 'Si no quieres beber, ni quitarte ropa, ni pagar, tendrás que cumplir un reto. ¿Te animas a descubrirlo?',
+    icon: 'body-outline'
   }
 ];

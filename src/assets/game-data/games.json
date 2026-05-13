@@ -15,7 +15,7 @@
     "subtitle": "En cada turno enfrentas un reto. Si no lo cumples, recibes un castigo. Ideal para subir la intensidad y poner a prueba a todos.",
     "icon": "flame-outline",
     "minPlayers": 2,
-    "maxPlayers": 20,
+    "maxPlayers": 25,
     "enabled": true,
     "route": "shot-or-dare"
   },
@@ -26,7 +26,7 @@
     "icon": "game-controller-outline",
     "minPlayers": 2,
     "maxPlayers": 4,
-    "enabled": true,
+    "enabled": false,
     "route": "ludo-party"
   },
   {

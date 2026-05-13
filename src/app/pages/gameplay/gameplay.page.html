@@ -1,0 +1,45 @@
+<ion-header translucent="true">
+
+  <ion-toolbar class="custom-toolbar">
+
+    <!-- IZQUIERDA -->
+    <ion-buttons slot="start">
+      <ion-button fill="clear" (click)="confirmExit()">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <!-- CENTRO -->
+    <ion-title>
+      <ion-button fill="clear" class="center-btn" (click)="openSuggestions()">
+        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+      </ion-button>
+    </ion-title>
+
+    <!-- DERECHA -->
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="openSettings()">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content class="app-background" [fullscreen]="true">
+
+  <div class="game-container">
+
+    <ng-container [ngSwitch]="gameId">
+      <app-todito *ngSwitchCase="'todito'"></app-todito>
+
+      <div *ngSwitchDefault class="error">
+        Juego no encontrado
+      </div>
+    </ng-container>
+
+  </div>
+
+</ion-content>

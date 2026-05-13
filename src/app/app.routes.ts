@@ -30,10 +30,6 @@ export const routes: Routes = [
     path: 'in-game-settings',
     loadComponent: () => import('./pages/in-game-settings/in-game-settings.page').then( m => m.InGameSettingsPage)
   },
-  /* {
-    path: 'todito',
-    loadComponent: () => import('./pages/games/todito/todito.page').then( m => m.ToditoPage)
-  }, */
   {
     path: 'caminitos',
     loadComponent: () => import('./pages/games/caminitos/caminitos.page').then( m => m.CaminitosPage)
@@ -45,5 +41,9 @@ export const routes: Routes = [
   {
     path: 'shotoreto',
     loadComponent: () => import('./pages/games/shotoreto/shotoreto.page').then( m => m.ShotoretoPage)
+  },
+  {
+    path: 'gameplay/:id',
+    loadComponent: () => import('./pages/gameplay/gameplay.page').then( m => m.GameplayPage)
   },
 ];

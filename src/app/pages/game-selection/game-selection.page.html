@@ -8,7 +8,6 @@
       <div class="game-card" *ngFor="let game of games" [class.disabled]="!game.enabled"
         [class.selected]="selectedGameId === game.id" (click)="game.enabled && (selectedGameId = game.id)">
 
-
         <!-- CINTA EN CONSTRUCCIÓN -->
         <div *ngIf="!game.enabled" class="ribbon">
           EN CONSTRUCCIÓN

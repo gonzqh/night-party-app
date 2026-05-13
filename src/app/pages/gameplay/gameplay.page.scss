@@ -1,0 +1,29 @@
+/* TOOLBAR GLASS */
+.custom-toolbar {
+  --background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* BOTONES */
+ion-toolbar ion-button {
+  color: white;
+}
+
+/* BOTÓN CENTRO */
+.center-btn {
+  --background: rgba(255,255,255,0.08);
+  --border-radius: 12px;
+}
+
+
+/* ERROR */
+.error {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+.center-btn {
+  --background: linear-gradient(135deg, #ff4d6d, #7b2ff7);
+}

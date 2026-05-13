@@ -4,4 +4,5 @@ export interface Difficulty {
   description: string;
   icon: string;
   level: number;
+  enabled: boolean;
 }
