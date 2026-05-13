@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "icon": "beer-outline",
+    "title": "Bienvenido a Night Party",
+    "text": "Disfruta juegos, retos y momentos divertidos con tus amigos. Todo listo para hacer tus reuniones mucho más entretenidas."
+  },
+  {
+    "id": "2",
+    "icon": "game-controller-outline",
+    "title": "Elige un juego",
+    "text": "Cada modo tiene reglas y dinámicas diferentes. Explora los distintos juegos y juega como más te guste."
+  },
+  {
+    "id": "3",
+    "icon": "people-outline",
+    "title": "Agrega a los jugadores",
+    "text": "Invita a tus amigos y arma el grupo para la partida. Mientras más jugadores, más divertida será la experiencia."
+  },
+  {
+    "id": "4",
+    "icon": "speedometer-outline",
+    "title": "Selecciona la dificultad",
+    "text": "Puedes elegir entre niveles casual, atrevido o extremo según el tipo de ambiente que quieran tener."
+  },
+  {
+    "id": "5",
+    "icon": "gift-outline",
+    "title": "Configura los castigos",
+    "text": "Personaliza las reglas de la partida con castigos como bebidas, retos, prendas o cualquier idea que prefieran."
+  },
+  {
+    "id": "6",
+    "icon": "settings-outline",
+    "title": "Personaliza la experiencia",
+    "text": "Cambia opciones y ajusta las reglas cuando quieras para que cada partida se adapte a tu grupo."
+  }
+]

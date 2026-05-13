@@ -1,0 +1,42 @@
+[
+  {
+    "id": "todito",
+    "title": "Todito 🎲",
+    "subtitle": "Cada jugador lanza el dado y el resultado define quién recibe o impone un castigo. Rápido, impredecible y perfecto para mantener la energía del grupo.",
+    "icon": "dice-outline",
+    "minPlayers": 3,
+    "maxPlayers": 25,
+    "enabled": true,
+    "route": "todito"
+  },
+  {
+    "id": "shot_or_dare",
+    "title": "Shot o Reto 🔥",
+    "subtitle": "En cada turno enfrentas un reto. Si no lo cumples, recibes un castigo. Ideal para subir la intensidad y poner a prueba a todos.",
+    "icon": "flame-outline",
+    "minPlayers": 2,
+    "maxPlayers": 25,
+    "enabled": true,
+    "route": "shot-or-dare"
+  },
+  {
+    "id": "ludo_party",
+    "title": "Ludo Party 🎮",
+    "subtitle": "El clásico juego de tablero donde cada movimiento puede terminar en un castigo. Estrategia, suerte y momentos inesperados en cada partida.",
+    "icon": "game-controller-outline",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "enabled": false,
+    "route": "ludo-party"
+  },
+  {
+    "id": "caminitos",
+    "title": "Caminitos 🐍",
+    "subtitle": "Avanza por el tablero lanzando el dado, pero cada caída o sorpresa puede llevarte directo a un castigo. Simple, dinámico y lleno de giros.",
+    "icon": "trail-sign-outline",
+    "minPlayers": 2,
+    "maxPlayers": 25,
+    "enabled": false,
+    "route": "caminitos"
+  }
+]
