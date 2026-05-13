@@ -44,12 +44,7 @@ export class PunishmentModalComponent {
     new EventEmitter<void>();
 
 
-  constructor(private alertController: AlertController) {
-        console.log(this.punishment);
-console.log(this.players);
-console.log(this.currentPlayer);
-
-   }
+  constructor(private alertController: AlertController) {}
 
   onCompleted() {
     this.completed.emit();
