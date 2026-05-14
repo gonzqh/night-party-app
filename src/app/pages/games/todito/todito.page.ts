@@ -50,6 +50,7 @@ export class ToditoPage implements OnInit {
     dice?: number;
     isRolling = false;
     game: any = null;
+    punismentTypes: AlternativePunishmentOption[] = [];
 
     constructor(private gameplayService: SessionService, private alertController: AlertController,
         private router: Router
@@ -75,16 +76,13 @@ export class ToditoPage implements OnInit {
                 ]
             }).then(alert => alert.present());
         }
+        this.punismentTypes =  ALTERNATIVE_PUNISHMENTS.filter(p => this.game.punishments.some((gp: any) => gp.type === p.type));
+
     }
 
     navigateToHome() {
         window.location.href =
     window.location.origin + '/home';
-    }
-
-
-    get getPunishemntTypes() {
-        return ALTERNATIVE_PUNISHMENTS.filter(p => this.game.punishments.some((gp: any) => gp.type === p.type));
     }
 
     get currentPlayer() {

@@ -45,7 +45,9 @@ export class PunishmentModalComponent {
     new EventEmitter<void>();
 
 
-  constructor(private alertController: AlertController) {}
+  constructor(private alertController: AlertController) {
+    console.log("PunishmentModalComponent initialized with punishment:", this.punishment);
+  }
 
   onCompleted() {
     this.completed.emit();

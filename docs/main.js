@@ -82,7 +82,7 @@ var routes = [
   },
   {
     path: "gameplay/:id",
-    loadComponent: () => import("./gameplay.page-IK44Y3SI.js").then((m) => m.GameplayPage)
+    loadComponent: () => import("./gameplay.page-CTW7ZLZG.js").then((m) => m.GameplayPage)
   }
 ];
 
