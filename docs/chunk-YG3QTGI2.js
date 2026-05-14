@@ -4,7 +4,7 @@ import {
   setClassMetadata,
   ɵɵdefineInjectable,
   ɵɵinject
-} from "./chunk-TJQERPMD.js";
+} from "./chunk-QISWUEEJ.js";
 
 // src/app/core/services/data.ts
 var _DataService = class _DataService {
@@ -44,4 +44,4 @@ var DataService = _DataService;
 export {
   DataService
 };
-//# sourceMappingURL=chunk-O4QEZBYU.js.map
+//# sourceMappingURL=chunk-YG3QTGI2.js.map

@@ -14,7 +14,7 @@ import {
   ɵɵelementStart,
   ɵɵproperty,
   ɵɵtext
-} from "./chunk-TJQERPMD.js";
+} from "./chunk-QISWUEEJ.js";
 import "./chunk-5UZFVFDN.js";
 import "./chunk-ZANXXOCD.js";
 import "./chunk-2WZOUF3G.js";
@@ -68,4 +68,4 @@ var LudoPage = _LudoPage;
 export {
   LudoPage
 };
-//# sourceMappingURL=ludo.page-WPIUSPLS.js.map
+//# sourceMappingURL=ludo.page-UKUMGYAW.js.map

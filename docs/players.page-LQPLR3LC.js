@@ -2,7 +2,7 @@ import {
   SessionService,
   addIcons,
   icons_exports
-} from "./chunk-FLYVGBRG.js";
+} from "./chunk-LWKNLOMK.js";
 import {
   CommonModule,
   Component,
@@ -44,7 +44,7 @@ import {
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty
-} from "./chunk-TJQERPMD.js";
+} from "./chunk-QISWUEEJ.js";
 import "./chunk-5UZFVFDN.js";
 import "./chunk-ZANXXOCD.js";
 import "./chunk-2WZOUF3G.js";
@@ -1513,4 +1513,4 @@ export {
 @capacitor/core/dist/index.js:
   (*! Capacitor: https://capacitorjs.com/ - MIT License *)
 */
-//# sourceMappingURL=players.page-T5HGHNQK.js.map
+//# sourceMappingURL=players.page-LQPLR3LC.js.map

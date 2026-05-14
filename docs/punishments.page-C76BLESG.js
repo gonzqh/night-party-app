@@ -3,12 +3,12 @@ import {
 } from "./chunk-4WM3X3AN.js";
 import {
   DataService
-} from "./chunk-O4QEZBYU.js";
+} from "./chunk-YG3QTGI2.js";
 import {
   SessionService,
   addIcons,
   icons_exports
-} from "./chunk-FLYVGBRG.js";
+} from "./chunk-LWKNLOMK.js";
 import {
   CommonModule,
   Component,
@@ -37,7 +37,7 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-TJQERPMD.js";
+} from "./chunk-QISWUEEJ.js";
 import "./chunk-5UZFVFDN.js";
 import "./chunk-ZANXXOCD.js";
 import "./chunk-2WZOUF3G.js";
@@ -195,4 +195,4 @@ var PunishmentsPage = _PunishmentsPage;
 export {
   PunishmentsPage
 };
-//# sourceMappingURL=punishments.page-TQ6DJQG3.js.map
+//# sourceMappingURL=punishments.page-C76BLESG.js.map

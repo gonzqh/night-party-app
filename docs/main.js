@@ -21,7 +21,7 @@ import {
   ɵɵelement,
   ɵɵelementEnd,
   ɵɵelementStart
-} from "./chunk-TJQERPMD.js";
+} from "./chunk-QISWUEEJ.js";
 import "./chunk-5UZFVFDN.js";
 import "./chunk-ZANXXOCD.js";
 import "./chunk-2WZOUF3G.js";
@@ -46,43 +46,43 @@ var routes = [
   },
   {
     path: "home",
-    loadComponent: () => import("./home.page-UNPVYK25.js").then((m) => m.HomePage)
+    loadComponent: () => import("./home.page-VT3S5CGI.js").then((m) => m.HomePage)
   },
   {
     path: "players",
-    loadComponent: () => import("./players.page-T5HGHNQK.js").then((m) => m.PlayersPage)
+    loadComponent: () => import("./players.page-LQPLR3LC.js").then((m) => m.PlayersPage)
   },
   {
     path: "game-selection",
-    loadComponent: () => import("./game-selection.page-NFDWJWHW.js").then((m) => m.GameSelectionPage)
+    loadComponent: () => import("./game-selection.page-S43RGSRL.js").then((m) => m.GameSelectionPage)
   },
   {
     path: "punishments",
-    loadComponent: () => import("./punishments.page-TQ6DJQG3.js").then((m) => m.PunishmentsPage)
+    loadComponent: () => import("./punishments.page-C76BLESG.js").then((m) => m.PunishmentsPage)
   },
   {
     path: "difficulty",
-    loadComponent: () => import("./difficulty.page-DUO3IIEX.js").then((m) => m.DifficultyPage)
+    loadComponent: () => import("./difficulty.page-EGOWGTFN.js").then((m) => m.DifficultyPage)
   },
   {
     path: "in-game-settings",
-    loadComponent: () => import("./in-game-settings.page-6V3UU34Y.js").then((m) => m.InGameSettingsPage)
+    loadComponent: () => import("./in-game-settings.page-PY3DSA6C.js").then((m) => m.InGameSettingsPage)
   },
   {
     path: "caminitos",
-    loadComponent: () => import("./caminitos.page-W5RT2L45.js").then((m) => m.CaminitosPage)
+    loadComponent: () => import("./caminitos.page-U5E3DF3C.js").then((m) => m.CaminitosPage)
   },
   {
     path: "ludo",
-    loadComponent: () => import("./ludo.page-WPIUSPLS.js").then((m) => m.LudoPage)
+    loadComponent: () => import("./ludo.page-UKUMGYAW.js").then((m) => m.LudoPage)
   },
   {
     path: "shotoreto",
-    loadComponent: () => import("./shotoreto.page-FYOB34FZ.js").then((m) => m.ShotoretoPage)
+    loadComponent: () => import("./shotoreto.page-GKOGHNBT.js").then((m) => m.ShotoretoPage)
   },
   {
     path: "gameplay/:id",
-    loadComponent: () => import("./gameplay.page-MSE3YKJP.js").then((m) => m.GameplayPage)
+    loadComponent: () => import("./gameplay.page-6AGIXLAQ.js").then((m) => m.GameplayPage)
   }
 ];
 

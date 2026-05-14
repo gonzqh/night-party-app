@@ -44,7 +44,7 @@ import {
   SessionService,
   addIcons,
   icons_exports
-} from "./chunk-FLYVGBRG.js";
+} from "./chunk-LWKNLOMK.js";
 import {
   APP_INITIALIZER,
   ActivatedRoute,
@@ -117,6 +117,7 @@ import {
   setIonicClasses,
   ɵsetClassDebugInfo,
   ɵɵInheritDefinitionFeature,
+  ɵɵNgOnChangesFeature,
   ɵɵProvidersFeature,
   ɵɵadvance,
   ɵɵattribute,
@@ -152,7 +153,7 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-TJQERPMD.js";
+} from "./chunk-QISWUEEJ.js";
 import "./chunk-5UZFVFDN.js";
 import "./chunk-ZANXXOCD.js";
 import "./chunk-2WZOUF3G.js";
@@ -7104,8 +7105,8 @@ var _PunishmentModalComponent = class _PunishmentModalComponent {
     this.completed = new EventEmitter();
     this.closed = new EventEmitter();
     this.alternativeIcon = "";
+    this.alternativePunishments = [];
     console.log("PunishmentModalComponent initialized with punishment:", this.punishment);
-    this.alternativeIcon = this.getAlternativeIcon(this.punishment?.type || "");
   }
   onCompleted() {
     this.completed.emit();
@@ -7128,24 +7129,21 @@ var _PunishmentModalComponent = class _PunishmentModalComponent {
         return "sparkles-outline";
     }
   }
-  get alternativePunishments() {
-    if (!this.punishment?.alternativePunishment) {
-      return [];
-    }
-    return Object.entries(this.punishment.alternativePunishment);
+  ngOnChanges() {
+    this.alternativePunishments = this.punishment?.alternativePunishment ? Object.entries(this.punishment.alternativePunishment) : [];
   }
 };
 _PunishmentModalComponent.\u0275fac = function PunishmentModalComponent_Factory(__ngFactoryType__) {
   return new (__ngFactoryType__ || _PunishmentModalComponent)(\u0275\u0275directiveInject(AlertController));
 };
-_PunishmentModalComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _PunishmentModalComponent, selectors: [["app-punishment-modal"]], inputs: { isOpen: "isOpen", punishment: "punishment", players: "players", currentPlayer: "currentPlayer" }, outputs: { completed: "completed", closed: "closed" }, decls: 2, vars: 2, consts: [[1, "punishment-modal", 3, "isOpen", "keepContentsMounted"], [1, "modal-wrapper"], [1, "punishment-card"], [1, "card-header"], [1, "title"], [1, "target-badge"], [1, "card-body"], [1, "description"], [1, "main-icon"], [3, "name"], [1, "alternatives"], ["class", "alternative-item", 4, "ngFor", "ngForOf"], ["expand", "block", 1, "complete-btn", 3, "click"], [1, "alternative-item"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"]], template: function PunishmentModalComponent_Template(rf, ctx) {
+_PunishmentModalComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _PunishmentModalComponent, selectors: [["app-punishment-modal"]], inputs: { isOpen: "isOpen", punishment: "punishment", players: "players", currentPlayer: "currentPlayer" }, outputs: { completed: "completed", closed: "closed" }, features: [\u0275\u0275NgOnChangesFeature], decls: 2, vars: 1, consts: [[1, "punishment-modal", 3, "isOpen"], [1, "modal-wrapper"], [1, "punishment-card"], [1, "card-header"], [1, "title"], [1, "target-badge"], [1, "card-body"], [1, "description"], [1, "main-icon"], [3, "name"], [1, "alternatives"], ["class", "alternative-item", 4, "ngFor", "ngForOf"], ["expand", "block", 1, "complete-btn", 3, "click"], [1, "alternative-item"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"]], template: function PunishmentModalComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "ion-modal", 0);
     \u0275\u0275template(1, PunishmentModalComponent_ng_template_1_Template, 16, 11, "ng-template");
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    \u0275\u0275property("isOpen", ctx.isOpen)("keepContentsMounted", true);
+    \u0275\u0275property("isOpen", ctx.isOpen);
   }
 }, dependencies: [
   CommonModule,
@@ -7166,7 +7164,7 @@ var PunishmentModalComponent = _PunishmentModalComponent;
       IonModal2,
       IonIcon,
       IonButton
-    ], template: `<ion-modal [isOpen]="isOpen" class="punishment-modal" [keepContentsMounted]="true">
+    ], template: `<ion-modal [isOpen]="isOpen" class="punishment-modal" >
   <ng-template>
 
     <div class="modal-wrapper">
@@ -7259,7 +7257,7 @@ var PunishmentModalComponent = _PunishmentModalComponent;
   }] });
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(PunishmentModalComponent, { className: "PunishmentModalComponent", filePath: "src/app/shared/components/punishment-modal/punishment-modal.component.ts", lineNumber: 31 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(PunishmentModalComponent, { className: "PunishmentModalComponent", filePath: "src/app/shared/components/punishment-modal/punishment-modal.component.ts", lineNumber: 30 });
 })();
 
 // src/app/pages/games/todito/todito.page.ts
@@ -7734,4 +7732,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=gameplay.page-MSE3YKJP.js.map
+//# sourceMappingURL=gameplay.page-6AGIXLAQ.js.map

@@ -14,7 +14,7 @@ import {
   ɵɵelementStart,
   ɵɵproperty,
   ɵɵtext
-} from "./chunk-TJQERPMD.js";
+} from "./chunk-QISWUEEJ.js";
 import "./chunk-5UZFVFDN.js";
 import "./chunk-ZANXXOCD.js";
 import "./chunk-2WZOUF3G.js";
@@ -68,4 +68,4 @@ var InGameSettingsPage = _InGameSettingsPage;
 export {
   InGameSettingsPage
 };
-//# sourceMappingURL=in-game-settings.page-6V3UU34Y.js.map
+//# sourceMappingURL=in-game-settings.page-PY3DSA6C.js.map

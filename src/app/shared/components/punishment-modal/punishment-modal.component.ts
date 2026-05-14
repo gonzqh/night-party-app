@@ -2,7 +2,8 @@ import {
   Component,
   EventEmitter,
   Input,
-  Output
+  Output,
+  OnChanges
 } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
@@ -14,8 +15,6 @@ import {
 } from '@ionic/angular/standalone';
 import { Punishment, PunishmentTarget } from 'src/app/core/models/Punishments';
 import { Player } from 'src/app/core/models/Player';
-import { hourglass } from 'ionicons/icons';
-
 @Component({
   selector: 'app-punishment-modal',
   standalone: true,
@@ -28,8 +27,7 @@ import { hourglass } from 'ionicons/icons';
     IonButton
   ]
 })
-export class PunishmentModalComponent {
-
+export class PunishmentModalComponent implements OnChanges {
   @Input() isOpen = false;
 
   @Input() punishment: Punishment | null = null;
@@ -45,10 +43,10 @@ export class PunishmentModalComponent {
     new EventEmitter<void>();
 
     alternativeIcon: string = "";
+    alternativePunishments: [string, string][] = [];
 
   constructor(private alertController: AlertController) {
     console.log("PunishmentModalComponent initialized with punishment:", this.punishment);
-    this.alternativeIcon = this.getAlternativeIcon(this.punishment?.type || '');
   }
 
   onCompleted() {
@@ -117,15 +115,12 @@ export class PunishmentModalComponent {
         return 'sparkles-outline';
     }
   }
+ngOnChanges() {
 
-  get alternativePunishments() {
-
-  if (!this.punishment?.alternativePunishment) {
-    return [];
-  }
-
-  return Object.entries(
-    this.punishment.alternativePunishment
-  );
+  this.alternativePunishments =
+    this.punishment?.alternativePunishment
+      ? Object.entries(this.punishment.alternativePunishment)
+      : [];
 }
+  
 }

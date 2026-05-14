@@ -1,11 +1,11 @@
 import {
   DataService
-} from "./chunk-O4QEZBYU.js";
+} from "./chunk-YG3QTGI2.js";
 import {
   SessionService,
   addIcons,
   icons_exports
-} from "./chunk-FLYVGBRG.js";
+} from "./chunk-LWKNLOMK.js";
 import {
   CommonModule,
   Component,
@@ -41,7 +41,7 @@ import {
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty
-} from "./chunk-TJQERPMD.js";
+} from "./chunk-QISWUEEJ.js";
 import "./chunk-5UZFVFDN.js";
 import "./chunk-ZANXXOCD.js";
 import "./chunk-2WZOUF3G.js";
@@ -181,4 +181,4 @@ var DifficultyPage = _DifficultyPage;
 export {
   DifficultyPage
 };
-//# sourceMappingURL=difficulty.page-DUO3IIEX.js.map
+//# sourceMappingURL=difficulty.page-EGOWGTFN.js.map

@@ -67123,6 +67123,7 @@ export {
   DOCUMENT,
   Optional,
   SkipSelf,
+  ɵɵNgOnChangesFeature,
   ɵɵgetInheritedFactory,
   ɵɵinjectAttribute,
   Attribute,
@@ -67435,4 +67436,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=chunk-TJQERPMD.js.map
+//# sourceMappingURL=chunk-QISWUEEJ.js.map
