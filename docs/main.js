@@ -58,7 +58,7 @@ var routes = [
   },
   {
     path: "punishments",
-    loadComponent: () => import("./punishments.page-AQSYDXMA.js").then((m) => m.PunishmentsPage)
+    loadComponent: () => import("./punishments.page-TQ6DJQG3.js").then((m) => m.PunishmentsPage)
   },
   {
     path: "difficulty",
@@ -82,7 +82,7 @@ var routes = [
   },
   {
     path: "gameplay/:id",
-    loadComponent: () => import("./gameplay.page-CTW7ZLZG.js").then((m) => m.GameplayPage)
+    loadComponent: () => import("./gameplay.page-MSE3YKJP.js").then((m) => m.GameplayPage)
   }
 ];
 

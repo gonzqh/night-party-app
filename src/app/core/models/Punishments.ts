@@ -4,6 +4,7 @@ export interface Punishment {
   description: string;
   minPlayers: number;
   icon?: string;
+  type: AlternativePunishmentType;
   maxPlayers: number;
   difficultiesIds: string[];
   alternativePunishment: Record<AlternativePunishmentType, string>;

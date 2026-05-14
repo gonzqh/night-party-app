@@ -29,4 +29,4 @@ var ALTERNATIVE_PUNISHMENTS = [
 export {
   ALTERNATIVE_PUNISHMENTS
 };
-//# sourceMappingURL=chunk-VIKOPQ5I.js.map
+//# sourceMappingURL=chunk-4WM3X3AN.js.map

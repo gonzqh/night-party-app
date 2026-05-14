@@ -39,7 +39,7 @@ import {
 } from "./chunk-R4OF4KHS.js";
 import {
   ALTERNATIVE_PUNISHMENTS
-} from "./chunk-VIKOPQ5I.js";
+} from "./chunk-4WM3X3AN.js";
 import {
   SessionService,
   addIcons,
@@ -7103,7 +7103,9 @@ var _PunishmentModalComponent = class _PunishmentModalComponent {
     this.players = [];
     this.completed = new EventEmitter();
     this.closed = new EventEmitter();
+    this.alternativeIcon = "";
     console.log("PunishmentModalComponent initialized with punishment:", this.punishment);
+    this.alternativeIcon = this.getAlternativeIcon(this.punishment?.type || "");
   }
   onCompleted() {
     this.completed.emit();
@@ -7732,4 +7734,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=gameplay.page-CTW7ZLZG.js.map
+//# sourceMappingURL=gameplay.page-MSE3YKJP.js.map

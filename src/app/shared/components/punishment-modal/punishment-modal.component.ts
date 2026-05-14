@@ -44,9 +44,11 @@ export class PunishmentModalComponent {
   @Output() closed =
     new EventEmitter<void>();
 
+    alternativeIcon: string = "";
 
   constructor(private alertController: AlertController) {
     console.log("PunishmentModalComponent initialized with punishment:", this.punishment);
+    this.alternativeIcon = this.getAlternativeIcon(this.punishment?.type || '');
   }
 
   onCompleted() {

@@ -1,6 +1,6 @@
 import {
   ALTERNATIVE_PUNISHMENTS
-} from "./chunk-VIKOPQ5I.js";
+} from "./chunk-4WM3X3AN.js";
 import {
   DataService
 } from "./chunk-O4QEZBYU.js";
@@ -195,4 +195,4 @@ var PunishmentsPage = _PunishmentsPage;
 export {
   PunishmentsPage
 };
-//# sourceMappingURL=punishments.page-AQSYDXMA.js.map
+//# sourceMappingURL=punishments.page-TQ6DJQG3.js.map
