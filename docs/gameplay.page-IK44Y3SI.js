@@ -7111,26 +7111,7 @@ var _PunishmentModalComponent = class _PunishmentModalComponent {
     this.closed.emit();
   }
   get resolveTarget() {
-    let currentIndex = this.players.findIndex((p) => p.id === this.currentPlayer?.id) || 0;
-    switch (this.punishment?.target) {
-      case "SELF":
-        return this.currentPlayer?.name;
-      case "LEFT":
-        const left = this.players[(currentIndex - 1 + this.players.length) % this.players.length];
-        return left.name;
-      case "RIGHT":
-        const right = this.players[(currentIndex + 1) % this.players.length];
-        return right.name;
-      case "ALL":
-        return "Todos los jugadores";
-      case "RANDOM":
-        const random = this.players[Math.floor(Math.random() * this.players.length)];
-        return random.name;
-      case "VOTE":
-        return "El jugador m\xE1s votado por los dem\xE1s jugadores";
-      default:
-        return "El jugador que elijas";
-    }
+    return "hourglass";
   }
   getAlternativeIcon(type) {
     switch (type) {
@@ -7275,7 +7256,7 @@ var PunishmentModalComponent = _PunishmentModalComponent;
   }] });
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(PunishmentModalComponent, { className: "PunishmentModalComponent", filePath: "src/app/shared/components/punishment-modal/punishment-modal.component.ts", lineNumber: 30 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(PunishmentModalComponent, { className: "PunishmentModalComponent", filePath: "src/app/shared/components/punishment-modal/punishment-modal.component.ts", lineNumber: 31 });
 })();
 
 // src/app/pages/games/todito/todito.page.ts
@@ -7751,4 +7732,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=gameplay.page-LOECZCVH.js.map
+//# sourceMappingURL=gameplay.page-IK44Y3SI.js.map

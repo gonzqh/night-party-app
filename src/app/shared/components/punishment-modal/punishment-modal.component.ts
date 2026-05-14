@@ -14,6 +14,7 @@ import {
 } from '@ionic/angular/standalone';
 import { Punishment, PunishmentTarget } from 'src/app/core/models/Punishments';
 import { Player } from 'src/app/core/models/Player';
+import { hourglass } from 'ionicons/icons';
 
 @Component({
   selector: 'app-punishment-modal',
@@ -55,6 +56,9 @@ export class PunishmentModalComponent {
   }
 
   get resolveTarget() {
+    return "hourglass";
+    /* 
+    return "hola";
     let currentIndex = this.players.findIndex(p => p.id === this.currentPlayer?.id) || 0;
     switch (this.punishment?.target) {
       case 'SELF':
@@ -89,7 +93,7 @@ export class PunishmentModalComponent {
         return 'El jugador más votado por los demás jugadores';
       default:
         return 'El jugador que elijas';
-    }
+    } */
   }
 
   getAlternativeIcon(type: string): string {
