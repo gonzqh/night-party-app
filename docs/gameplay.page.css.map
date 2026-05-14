@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/pages/gameplay/gameplay.page.scss"],
-  "sourcesContent": ["/* TOOLBAR GLASS */\n.custom-toolbar {\n  --background: rgba(0,0,0,0.3);\n  backdrop-filter: blur(12px);\n  border-bottom: 1px solid rgba(255,255,255,0.05);\n}\n\n/* BOTONES */\nion-toolbar ion-button {\n  color: white;\n}\n\n/* BOTÓN CENTRO */\n.center-btn {\n  --background: rgba(255,255,255,0.08);\n  --border-radius: 12px;\n}\n\n\n/* ERROR */\n.error {\n  text-align: center;\n  color: white;\n  margin-top: 40px;\n}\n\n.center-btn {\n  --background: linear-gradient(135deg, #ff4d6d, #7b2ff7);\n}"],
-  "mappings": ";;;AACA,CAAA;AACE,gBAAA,KAAA,CAAA,CAAA,CAAA,CAAA,CAAA,CAAA;AACA,2BAAA,KAAA;AAAA,mBAAA,KAAA;AACA,iBAAA,IAAA,MAAA,KAAA,GAAA,EAAA,GAAA,EAAA,GAAA,EAAA;;AAIF,YAAA;AACE,SAAA;;AAIF,CAAA;AACE,gBAAA,KAAA,GAAA,CAAA,GAAA,CAAA,GAAA,CAAA;AACA,mBAAA;;AAKF,CAAA;AACE,cAAA;AACA,SAAA;AACA,cAAA;;AAGF,CAbA;AAcE;IAAA;MAAA,MAAA;MAAA,OAAA;MAAA;;",
-  "names": []
-}

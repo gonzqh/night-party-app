@@ -1,11 +1,8 @@
 .player-container {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  margin-top: 10px;
 }
 
 .todito-container {
-  padding: 20px;
-  padding-bottom: 50px;
 }
 
 /* PLAYERS */
@@ -124,7 +121,7 @@
   width: 220px;
   height: 220px;
 
-  margin: 30px auto;
+  margin: 0px auto;
 
   display: flex;
   justify-content: center;
@@ -300,7 +297,6 @@ backface-visibility: hidden;
 /* RESULT */
 .result-card {
 
-  margin-top: 30px;
 
   padding: 20px;
 

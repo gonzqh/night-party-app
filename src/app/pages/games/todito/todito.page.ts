@@ -59,7 +59,6 @@ export class ToditoPage implements OnInit {
 
     ngOnInit() {
         this.game = this.gameplayService.getSessionData();
-        console.log(this.game);
         if (!this.game || !this.game.players || !this.game.punishments || this.game.players.length === 0 || this.game.punishments.length === 0) {
             // Manejar el caso donde no hay datos de juego disponibles
             console.error('No se encontraron datos de juego en la sesión.');
