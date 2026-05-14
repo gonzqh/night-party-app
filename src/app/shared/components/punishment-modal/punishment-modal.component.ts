@@ -44,7 +44,7 @@ export class PunishmentModalComponent implements OnChanges {
 
     alternativeIcon: string = "";
     alternativePunishments: [string, string][] = [];
-
+randomPlayerName = '';
   constructor(private alertController: AlertController) {
     console.log("PunishmentModalComponent initialized with punishment:", this.punishment);
   }
@@ -58,9 +58,6 @@ export class PunishmentModalComponent implements OnChanges {
   }
 
   get resolveTarget() {
-    return "hourglass";
-    /* 
-    return "hola";
     let currentIndex = this.players.findIndex(p => p.id === this.currentPlayer?.id) || 0;
     switch (this.punishment?.target) {
       case 'SELF':
@@ -86,16 +83,12 @@ export class PunishmentModalComponent implements OnChanges {
         return 'Todos los jugadores';
 
       case 'RANDOM':
-        const random =
-          this.players[
-          Math.floor(Math.random() * this.players.length)
-          ];
-        return random.name;
+  return this.randomPlayerName;
       case 'VOTE':
         return 'El jugador más votado por los demás jugadores';
       default:
         return 'El jugador que elijas';
-    } */
+    } 
   }
 
   getAlternativeIcon(type: string): string {
@@ -121,6 +114,15 @@ ngOnChanges() {
     this.punishment?.alternativePunishment
       ? Object.entries(this.punishment.alternativePunishment)
       : [];
+
+  if (this.players.length > 0) {
+
+    const random =
+      this.players[
+      Math.floor(Math.random() * this.players.length)
+      ];
+
+    this.randomPlayerName = random.name;
+  }
 }
-  
 }
